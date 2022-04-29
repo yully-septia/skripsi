@@ -1,0 +1,187 @@
+CRITICAL - 2022-04-28 15:31:34 --> Undefined variable $id_var
+#0 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 71)
+#1 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(29): App\Controllers\Visualisasi->tampilkan()
+#2 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#3 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#4 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-28 15:32:12 --> Undefined variable $id_tahun
+#0 C:\xampp\htdocs\sig-agam\app\Views\visualisasi\index.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 139)
+#1 C:\xampp\htdocs\sig-agam\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sig-agam\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sig-agam\system\Common.php(1089): CodeIgniter\View\View->render('visualisasi/ind...', Array, true)
+#4 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(31): view('visualisasi/ind...', Array)
+#5 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#6 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#7 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-28 15:32:47 --> Undefined variable $id_tahun
+#0 C:\xampp\htdocs\sig-agam\app\Views\visualisasi\index.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 134)
+#1 C:\xampp\htdocs\sig-agam\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sig-agam\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sig-agam\system\Common.php(1089): CodeIgniter\View\View->render('visualisasi/ind...', Array, true)
+#4 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(31): view('visualisasi/ind...', Array)
+#5 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#6 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#7 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-28 15:33:41 --> Undefined variable $id
+#0 C:\xampp\htdocs\sig-agam\app\Views\visualisasi\index.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 134)
+#1 C:\xampp\htdocs\sig-agam\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sig-agam\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sig-agam\system\Common.php(1089): CodeIgniter\View\View->render('visualisasi/ind...', Array, true)
+#4 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(31): view('visualisasi/ind...', Array)
+#5 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#6 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#7 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-28 15:34:27 --> Undefined variable $id_tahun
+#0 C:\xampp\htdocs\sig-agam\app\Views\visualisasi\index.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 134)
+#1 C:\xampp\htdocs\sig-agam\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sig-agam\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sig-agam\system\Common.php(1089): CodeIgniter\View\View->render('visualisasi/ind...', Array, true)
+#4 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(31): view('visualisasi/ind...', Array)
+#5 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#6 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#7 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-28 15:34:44 --> Undefined variable $id
+#0 C:\xampp\htdocs\sig-agam\app\Views\visualisasi\index.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 134)
+#1 C:\xampp\htdocs\sig-agam\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sig-agam\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sig-agam\system\Common.php(1089): CodeIgniter\View\View->render('visualisasi/ind...', Array, true)
+#4 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(31): view('visualisasi/ind...', Array)
+#5 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#6 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#7 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-28 15:35:36 --> Undefined variable $id_tahun
+#0 C:\xampp\htdocs\sig-agam\app\Views\visualisasi\index.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 134)
+#1 C:\xampp\htdocs\sig-agam\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sig-agam\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sig-agam\system\Common.php(1089): CodeIgniter\View\View->render('visualisasi/ind...', Array, true)
+#4 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(31): view('visualisasi/ind...', Array)
+#5 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#6 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#7 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-28 15:38:36 --> Trying to access array offset on value of type int
+#0 C:\xampp\htdocs\sig-agam\app\Views\visualisasi\index.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\sig-agam\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sig-agam\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sig-agam\system\Common.php(1089): CodeIgniter\View\View->render('visualisasi/ind...', Array, true)
+#4 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(31): view('visualisasi/ind...', Array)
+#5 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#6 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#7 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-28 15:42:28 --> Array to string conversion
+#0 C:\xampp\htdocs\sig-agam\app\Views\visualisasi\index.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\sig-agam\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sig-agam\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sig-agam\system\Common.php(1089): CodeIgniter\View\View->render('visualisasi/ind...', Array, true)
+#4 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(31): view('visualisasi/ind...', Array)
+#5 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#6 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#7 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-28 15:58:08 --> Cannot access offset of type string on string
+#0 C:\xampp\htdocs\sig-agam\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\sig-agam\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\sig-agam\system\Common.php(1089): CodeIgniter\View\View->render('visualisasi/ind...', Array, true)
+#3 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(31): view('visualisasi/ind...', Array)
+#4 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#5 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#6 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-28 15:58:40 --> Call to a member function getResultArray() on array
+#0 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(29): App\Controllers\Visualisasi->tampilkan()
+#1 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#2 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#3 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-28 15:59:49 --> Array to string conversion
+#0 C:\xampp\htdocs\sig-agam\app\Views\visualisasi\index.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 134)
+#1 C:\xampp\htdocs\sig-agam\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sig-agam\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sig-agam\system\Common.php(1089): CodeIgniter\View\View->render('visualisasi/ind...', Array, true)
+#4 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(31): view('visualisasi/ind...', Array)
+#5 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#6 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#7 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-28 16:04:45 --> Cannot access offset of type string on string
+#0 C:\xampp\htdocs\sig-agam\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\sig-agam\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\sig-agam\system\Common.php(1089): CodeIgniter\View\View->render('visualisasi/ind...', Array, true)
+#3 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(31): view('visualisasi/ind...', Array)
+#4 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#5 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#6 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-28 16:11:18 --> Cannot access offset of type string on string
+#0 C:\xampp\htdocs\sig-agam\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\sig-agam\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\sig-agam\system\Common.php(1089): CodeIgniter\View\View->render('visualisasi/ind...', Array, true)
+#3 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(31): view('visualisasi/ind...', Array)
+#4 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#5 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#6 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-28 16:11:48 --> Cannot access offset of type string on string
+#0 C:\xampp\htdocs\sig-agam\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\sig-agam\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\sig-agam\system\Common.php(1089): CodeIgniter\View\View->render('visualisasi/ind...', Array, true)
+#3 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(31): view('visualisasi/ind...', Array)
+#4 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#5 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#6 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-28 16:12:14 --> Array to string conversion
+#0 C:\xampp\htdocs\sig-agam\app\Views\visualisasi\index.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 134)
+#1 C:\xampp\htdocs\sig-agam\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sig-agam\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sig-agam\system\Common.php(1089): CodeIgniter\View\View->render('visualisasi/ind...', Array, true)
+#4 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(31): view('visualisasi/ind...', Array)
+#5 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#6 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#7 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-28 16:12:55 --> Trying to access array offset on value of type null
+#0 C:\xampp\htdocs\sig-agam\app\Views\visualisasi\index.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'C:\\xampp\\htdocs...', 134)
+#1 C:\xampp\htdocs\sig-agam\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sig-agam\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sig-agam\system\Common.php(1089): CodeIgniter\View\View->render('visualisasi/ind...', Array, true)
+#4 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(31): view('visualisasi/ind...', Array)
+#5 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#6 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#7 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-28 16:13:43 --> Undefined array key "kecamatan"
+#0 C:\xampp\htdocs\sig-agam\app\Views\visualisasi\index.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 134)
+#1 C:\xampp\htdocs\sig-agam\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sig-agam\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sig-agam\system\Common.php(1089): CodeIgniter\View\View->render('visualisasi/ind...', Array, true)
+#4 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(31): view('visualisasi/ind...', Array)
+#5 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#6 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#7 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

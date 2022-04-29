@@ -1,0 +1,64 @@
+CRITICAL - 2022-04-24 03:05:43 --> file_get_contents(http://localhost/coba-geojson/public/maps/prov.geojson): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 10)
+#1 C:\xampp\htdocs\coba-geojson\app\Controllers\Maps.php(10): file_get_contents('http://localhos...')
+#2 C:\xampp\htdocs\coba-geojson\system\CodeIgniter.php(832): App\Controllers\Maps->index()
+#3 C:\xampp\htdocs\coba-geojson\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Maps))
+#4 C:\xampp\htdocs\coba-geojson\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\coba-geojson\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\coba-geojson\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2022-04-24 03:23:15 --> Invalid file: cobaa-geojson.php
+#0 C:\xampp\htdocs\coba-geojson\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cobaa-geojson.p...')
+#1 C:\xampp\htdocs\coba-geojson\system\Common.php(1089): CodeIgniter\View\View->render('cobaa-geojson', Array, true)
+#2 C:\xampp\htdocs\coba-geojson\app\Controllers\Maps.php(16): view('cobaa-geojson', Array)
+#3 C:\xampp\htdocs\coba-geojson\system\CodeIgniter.php(832): App\Controllers\Maps->index()
+#4 C:\xampp\htdocs\coba-geojson\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Maps))
+#5 C:\xampp\htdocs\coba-geojson\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\coba-geojson\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\coba-geojson\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-24 03:23:32 --> Invalid file: cobaa-geojson/index.php
+#0 C:\xampp\htdocs\coba-geojson\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cobaa-geojson/i...')
+#1 C:\xampp\htdocs\coba-geojson\system\Common.php(1089): CodeIgniter\View\View->render('cobaa-geojson/i...', Array, true)
+#2 C:\xampp\htdocs\coba-geojson\app\Controllers\Maps.php(16): view('cobaa-geojson/i...', Array)
+#3 C:\xampp\htdocs\coba-geojson\system\CodeIgniter.php(832): App\Controllers\Maps->index()
+#4 C:\xampp\htdocs\coba-geojson\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Maps))
+#5 C:\xampp\htdocs\coba-geojson\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\coba-geojson\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\coba-geojson\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-24 22:43:40 --> Invalid file: coba-geojson/cobaa-geojson.php
+#0 C:\xampp\htdocs\coba-geojson\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('coba-geojson/co...')
+#1 C:\xampp\htdocs\coba-geojson\system\Common.php(1089): CodeIgniter\View\View->render('coba-geojson/co...', Array, true)
+#2 C:\xampp\htdocs\coba-geojson\app\Controllers\Maps.php(16): view('coba-geojson/co...', Array)
+#3 C:\xampp\htdocs\coba-geojson\system\CodeIgniter.php(832): App\Controllers\Maps->index()
+#4 C:\xampp\htdocs\coba-geojson\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Maps))
+#5 C:\xampp\htdocs\coba-geojson\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\coba-geojson\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\coba-geojson\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-04-24 23:42:13 --> Undefined variable $data
+#0 C:\xampp\htdocs\sig-agam\app\Views\visualisasi\index.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\sig-agam\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sig-agam\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sig-agam\system\Common.php(1089): CodeIgniter\View\View->render('visualisasi/ind...', Array, true)
+#4 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(22): view('visualisasi/ind...', Array)
+#5 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#6 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#7 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sig-agam\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2022-04-24 23:44:39 --> Undefined variable $data
+#0 C:\xampp\htdocs\sig-agam\app\Views\visualisasi\index.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12)
+#1 C:\xampp\htdocs\sig-agam\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sig-agam\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sig-agam\system\Common.php(1089): CodeIgniter\View\View->render('visualisasi/ind...', Array, true)
+#4 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(23): view('visualisasi/ind...', Array)
+#5 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#6 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#7 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\sig-agam\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#10 {main}
