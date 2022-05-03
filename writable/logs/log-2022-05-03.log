@@ -1,0 +1,167 @@
+ERROR - 2022-05-03 02:55:03 --> Unknown column 'kode_wilayah' in 'where clause'
+CRITICAL - 2022-05-03 02:55:03 --> Unknown column 'kode_wilayah' in 'where clause'
+#0 C:\xampp\htdocs\sig-agam\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sig-agam\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sig-agam\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sig-agam\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sig-agam\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sig-agam\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(79): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(23): App\Controllers\Visualisasi->tampilkan()
+#8 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#9 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#10 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-05-03 02:57:44 --> Unknown column 'kode_wilayah' in 'where clause'
+CRITICAL - 2022-05-03 02:57:44 --> Unknown column 'kode_wilayah' in 'where clause'
+#0 C:\xampp\htdocs\sig-agam\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sig-agam\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sig-agam\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sig-agam\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sig-agam\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sig-agam\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(79): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(23): App\Controllers\Visualisasi->tampilkan()
+#8 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#9 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#10 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-05-03 02:59:54 --> Unknown column 'kd_kecamatan' in 'where clause'
+CRITICAL - 2022-05-03 02:59:54 --> Unknown column 'kd_kecamatan' in 'where clause'
+#0 C:\xampp\htdocs\sig-agam\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sig-agam\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sig-agam\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sig-agam\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sig-agam\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sig-agam\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(79): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(23): App\Controllers\Visualisasi->tampilkan()
+#8 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#9 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#10 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-05-03 02:59:57 --> Unknown column 'kd_kecamatan' in 'where clause'
+CRITICAL - 2022-05-03 02:59:57 --> Unknown column 'kd_kecamatan' in 'where clause'
+#0 C:\xampp\htdocs\sig-agam\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sig-agam\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sig-agam\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sig-agam\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sig-agam\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sig-agam\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(79): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(23): App\Controllers\Visualisasi->tampilkan()
+#8 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#9 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#10 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-05-03 04:39:03 --> Unknown column 'kd_kec' in 'where clause'
+CRITICAL - 2022-05-03 04:39:03 --> Unknown column 'kd_kec' in 'where clause'
+#0 C:\xampp\htdocs\sig-agam\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\sig-agam\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\sig-agam\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\sig-agam\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\sig-agam\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\sig-agam\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(79): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(23): App\Controllers\Visualisasi->tampilkan()
+#8 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#9 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#10 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-05-03 04:40:57 --> Attempt to read property "nilai" on array
+#0 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 83)
+#1 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(23): App\Controllers\Visualisasi->tampilkan()
+#2 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#3 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#4 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-03 04:42:28 --> Attempt to modify property "properties" on null
+#0 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(23): App\Controllers\Visualisasi->tampilkan()
+#1 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#2 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#3 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-03 05:34:55 --> Attempt to read property "nilai" on array
+#0 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 86)
+#1 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(23): App\Controllers\Visualisasi->tampilkan()
+#2 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#3 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#4 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-03 05:34:59 --> Attempt to read property "nilai" on array
+#0 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 86)
+#1 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(23): App\Controllers\Visualisasi->tampilkan()
+#2 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#3 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#4 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-03 05:38:40 --> Undefined property: stdClass::$nilai
+#0 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 86)
+#1 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(23): App\Controllers\Visualisasi->tampilkan()
+#2 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#3 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#4 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-03 05:40:41 --> Attempt to read property "nilai" on array
+#0 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 89)
+#1 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(23): App\Controllers\Visualisasi->tampilkan()
+#2 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#3 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#4 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-03 05:47:03 --> Illegal offset type
+#0 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(23): App\Controllers\Visualisasi->tampilkan()
+#1 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#2 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#3 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-03 05:49:51 --> Attempt to read property "nilai" on array
+#0 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 105)
+#1 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(23): App\Controllers\Visualisasi->tampilkan()
+#2 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#3 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#4 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-03 05:50:11 --> Undefined property: App\Controllers\Visualisasi::$db
+#0 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 109)
+#1 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(23): App\Controllers\Visualisasi->tampilkan()
+#2 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#3 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#4 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-03 05:51:44 --> Undefined variable $maps
+#0 C:\xampp\htdocs\sig-agam\app\Views\visualisasi\index.php(165): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 165)
+#1 C:\xampp\htdocs\sig-agam\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sig-agam\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sig-agam\system\Common.php(1089): CodeIgniter\View\View->render('visualisasi/ind...', Array, true)
+#4 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(25): view('visualisasi/ind...', Array)
+#5 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#6 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#7 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-03 05:54:30 --> Undefined array key "kecamatan"
+#0 C:\xampp\htdocs\sig-agam\app\Views\visualisasi\index.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 147)
+#1 C:\xampp\htdocs\sig-agam\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\sig-agam\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\sig-agam\system\Common.php(1089): CodeIgniter\View\View->render('visualisasi/ind...', Array, true)
+#4 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(25): view('visualisasi/ind...', Array)
+#5 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#6 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#7 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

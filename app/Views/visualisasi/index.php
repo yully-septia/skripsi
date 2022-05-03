@@ -12,6 +12,13 @@
     <script src="<?= base_url('windmill-admin/assets/js/init-alpine.js'); ?>"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="<?= base_url('leaflet/leaflet.css') ?>" />
+    <script src="<?= base_url('leaflet/leaflet.js') ?>"></script>
+    <style>
+        #maps {
+            height: 500px;
+        }
+    </style>
 </head>
 
 <body>
@@ -126,23 +133,26 @@
                                     </div>
                                 </form>
                             </div>
+                            <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                                <h4 class="mb-4 font-semibold text-gray-800 dark:text-gray-300">
+                                    Tabel
+                                </h4>
+                                <table>
+                                    <thead>
+                                        <th>Kecamatan</th>
+                                        <th>Nilai</th>
+                                    </thead>
+                                    <?php foreach ($output['result'] as $row) : ?>
+                                        <tr>
+                                            <td><?= $row['kecamatan']; ?></td>
+                                            <td><?= $row['nilai']; ?></td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </table>
+                            </div>
                         </div>
                         <div class="min-w-0 p-4 bg-white rounded-lg shadow-md dark:bg-gray-800">
-                            <!-- <h4 class="mb-4 font-semibold text-gray-800 dark:text-gray-300">
-                                Traffic
-                            </h4> -->
-                            <table>
-                                <thead>
-                                    <th>Kecamatan</th>
-                                    <th>Nilai</th>
-                                </thead>
-                                <?php foreach ($data_kec as $row) : ?>
-                                    <tr>
-                                        <td><?= $row['kecamatan']; ?></td>
-                                        <td><?= $row['nilai']; ?></td>
-                                    </tr>
-                                <?php endforeach; ?>
-                            </table>
+                            <div id="maps"></div>
                         </div>
                     </div>
                 </div>
@@ -151,6 +161,11 @@
     </div>
 
     <script>
+        // Variabel yang berisi agam.geojson
+        var geo_maps = <?= json_encode($output['maps']) ?>;
+
+        var nilaiMax = <?= $output['nilai_max'] ?>;
+
         function tampilkan() {
             var id_var = $('#variabel').val();
             var id_tahun = $('#tahun').val();
@@ -214,6 +229,39 @@
             });
 
         });
+
+        var map = L.map('maps').setView([-0.220939, 100.170326], 10);
+
+        function getColor(d) {
+            return d > (nilaiMax / 8) * 7 ? '#800026' :
+                d > (nilaiMax / 8) * 6 ? '#BD0026' :
+                d > (nilaiMax / 8) * 5 ? '#E31A1C' :
+                d > (nilaiMax / 8) * 4 ? '#FC4E2A' :
+                d > (nilaiMax / 8) * 3 ? '#FD8D3C' :
+                d > (nilaiMax / 8) * 2 ? '#FEB24C' :
+                d > (nilaiMax / 8) * 1 ? '#FED976' :
+                '#FFEDA0';
+        }
+
+        function style(feature) {
+            return {
+                weight: 2,
+                opacity: 1,
+                color: 'white',
+                dashArray: '3',
+                fillOpacity: 0.7,
+                fillColor: getColor(parseInt(feature.properties.nilai))
+            };
+        }
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
+        }).addTo(map);
+
+        var geojson = new L.geoJson(geo_maps, {
+            style: style
+        }).addTo(map);
     </script>
 </body>
 

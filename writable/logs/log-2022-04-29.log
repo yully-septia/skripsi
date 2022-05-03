@@ -1,0 +1,9 @@
+CRITICAL - 2022-04-29 16:43:37 --> file_get_contents(http://localhost/sig-agam/public/maps/prov.geojson): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 18)
+#1 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(18): file_get_contents('http://localhos...')
+#2 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#3 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#4 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}

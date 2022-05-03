@@ -10,24 +10,18 @@ class Visualisasi extends BaseController
 
     public function __construct()
     {
-        // header('Access-Control-Allow-Origin: *');
-        // header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
-        // header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
-        // $method = $_SERVER['REQUEST_METHOD'];
-        // if ($method == "OPTIONS") {
-        //     die();
-        // }
-
         $this->model = new DataKecModel();
     }
     public function index()
     {
+
         $data = [
-            'dda_kec' => $this->model->get_dda_kec(),
+            // 'dda_kec' => $this->model->get_dda_kec(),
             'kategori' => $this->model->get_kategori(),
             'tahun' => $this->model->get_tahun(),
-            'data_kec' => $this->tampilkan(),
+            'output' => $this->tampilkan(),
         ];
+
         return view('visualisasi/index', $data);
     }
 
@@ -69,9 +63,42 @@ class Visualisasi extends BaseController
             $id_var = intval($this->request->getPost('variabel'));
             $id_tahun = intval($this->request->getPost('tahun'));
         }
-        var_dump($id_var, $id_tahun);
+
+        // Load file Geojson
+        $filename = base_url('assets/agamkab.geojson');
+        $file = file_get_contents($filename);
+        $file = json_decode($file);
+
+        // Mengambil setiap features (data spasial tiap kecamatan) pada file geojson
+        $features = $file->features;
+
+        // Membrikan nilai pada setiap feature/kecamatan berdasarkan id_var dan id_tahun yang direquest
+        foreach ($features as $feature) {
+            //Mengambil properti kode kecamatan dari setiap feature
+            $kode_kec = $feature->properties->kode;
+            // Mengambil data berdasarkan kode_kecamatan, id_var, dan id_tahun yang direquest
+            $data = $this->model
+                ->join('tbl_kecamatan', 'tbl_kecamatan.id_kec=tbl_data_kec.id_kec')
+                ->where('id_var', $id_var)
+                ->where('id_tahun', $id_tahun)
+                ->where('kd_kec', $kode_kec)
+                ->first();
+            // Memberikan data nilai dari database pada setiap feature
+            if ($data) {
+                $feature->properties->nilai = $data['nilai'];
+            }
+        }
+
+        $nilaiMax = $this->model
+            ->select('MAX(nilai) AS nilai')
+            ->where('id_var', $id_var)
+            ->where('id_tahun', $id_tahun)
+            ->first()['nilai'];
+
         // Ambil data dari database berdasarkan nilai id_var dan id_tahun
-        $output = $this->model->get_data_kec($id_var, $id_tahun);
+        $result = $this->model->get_data_kec($id_var, $id_tahun);
+
+        $output = ['maps' => $features, 'result' => $result, 'nilai_max' => $nilaiMax];
         return $output;
     }
 }
