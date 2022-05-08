@@ -84,6 +84,7 @@ class DataKecModel extends Model
         // Menampilkan data berdasarkan inputan id_var dan id_tahun
         $query = $this->db
             ->table('tbl_data_kec')
+            ->select('kecamatan, nilai')
             ->join('tbl_kecamatan', 'tbl_kecamatan.id_kec=tbl_data_kec.id_kec')
             ->where($array)
             ->get()

@@ -165,3 +165,15 @@ CRITICAL - 2022-05-03 05:54:30 --> Undefined array key "kecamatan"
 #7 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 {main}
+ERROR - 2022-05-03 08:58:51 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2022-05-03 08:58:51 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\xampp\htdocs\sig-agam\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\sig-agam\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\sig-agam\app\Models\DataKecModel.php(36): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\sig-agam\app\Controllers\Visualisasi.php(20): App\Models\DataKecModel->get_kategori()
+#4 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(832): App\Controllers\Visualisasi->index()
+#5 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Visualisasi))
+#6 C:\xampp\htdocs\sig-agam\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

@@ -8,12 +8,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="<?= base_url('windmill-admin/assets/css/tailwind.output.css'); ?>" />
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="<?= base_url('/assets/js/alpine.min.js'); ?>" defer></script>
     <script src="<?= base_url('windmill-admin/assets/js/init-alpine.js'); ?>"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="<?= base_url('/assets/js/jquery-3.4.1.min.js'); ?>"></script>
+    <script src="<?= base_url('/assets/js/popper.min.js'); ?>"></script>
     <link rel="stylesheet" href="<?= base_url('leaflet/leaflet.css') ?>" />
     <script src="<?= base_url('leaflet/leaflet.js') ?>"></script>
+    <link rel="stylesheet" href="<?= base_url('/assets/css/chart.min.css'); ?>" />
+    <script src="<?= base_url('/assets/js/chart.min.js'); ?>" defer></script>
     <style>
         #maps {
             height: 500px;
@@ -22,8 +24,9 @@
 </head>
 
 <body>
-    <div class="flex h-screen bg-gray-50 dark:bg-gray-900" :class="{ 'overflow-hidden': isSideMenuOpen}">
-        <!-- Desktop sidebar -->
+    <div class=" flex h-screen bg-gray-50 dark:bg-gray-900" :class="{ 'overflow-hidden': isSideMenuOpen}">
+        <!-- Desktop sidebar 
+        -->
         <!-- <aside class="z-20 hidden w-64 overflow-y-auto bg-white dark:bg-gray-800 md:block flex-shrink-0">
             <div class="py-4 text-gray-500 dark:text-gray-400">
                 <a class="ml-6 text-lg font-bold text-gray-800 dark:text-gray-200" href="#">
@@ -88,13 +91,13 @@
                     </ul>
                 </div>
             </header>
-            <main class="h-full pb-16 overflow-y-auto">
-                <div class="container mx-auto grid">
-                    <div class="grid mx-3 gap-6 my-6 md:grid-cols-2">
+            <main class="h-full pb-4 overflow-y-auto">
+                <div class="mx-5 mx-auto">
+                    <div class="grid my-5 md:grid-cols-3 grid-cols-3 gap-3">
                         <div class="min-w-0 bg-gray-50 dark:bg-gray-900 rounded-lg ">
-                            <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                            <div class="px-4 py-2 mb-3 bg-white rounded-lg shadow-md dark:bg-gray-800">
                                 <form action="<?= base_url('visualisasi/index'); ?>" method="post" accept-charset="utf-8">
-                                    <div class="block flex mt-4 text-sm">
+                                    <div class="block flex mt-2 text-sm">
                                         <label class="text-gray-700 pr-2 flex items-center dark:text-gray-400" for="kategori">Kategori</label>
                                         <select id="kategori" name="kategori" class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
                                             <option value="" disabled selected hidden class="text-slate-500 text-sm">Pilih Kategori</option>
@@ -103,21 +106,21 @@
                                             <?php endforeach; ?>
                                         </select>
                                     </div>
-                                    <div class="block flex mt-4 text-sm">
+                                    <div class="block flex mt-2 text-sm">
                                         <label class="text-gray-700 pr-2 flex items-center dark:text-gray-400" for="indikator">Indikator</label>
                                         <select id="indikator" name="indikator" class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
                                             <option value="" disabled selected hidden class="text-slate-500 text-sm">Pilih Indikator</option>
                                             <?php  ?>
                                         </select>
                                     </div>
-                                    <div class="block flex mt-4 text-sm">
+                                    <div class="block flex mt-2 text-sm">
                                         <label class="text-gray-700 pr-2 flex items-center dark:text-gray-400" for="variabel">Variabel</label>
                                         <select id="variabel" name="variabel" class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
                                             <option value="" disabled selected hidden class="text-slate-500 text-sm">Pilih Variabel</option>
                                             <?php  ?>
                                         </select>
                                     </div>
-                                    <div class="block flex mt-4 text-sm">
+                                    <div class="block flex mt-2 text-sm">
                                         <label class="text-gray-700 pr-2 flex items-center dark:text-gray-400" for="tahun">Tahun</label>
                                         <select id="tahun" name="tahun" class="block w-full mt-1 text-sm dark:text-gray-300 dark:border-gray-600 dark:bg-gray-700 form-select focus:border-purple-400 focus:outline-none focus:shadow-outline-purple dark:focus:shadow-outline-gray">
                                             <option value="" disabled selected hidden class="text-slate-500 text-sm">Pilih Tahun</option>
@@ -126,44 +129,56 @@
                                             <?php endforeach; ?>
                                         </select>
                                     </div>
-                                    <div class="block flex mt-4 text-sm">
+                                    <div class="block flex mt-2 text-sm">
                                         <button type="Submit" class="px-3 py-1 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-purple-600 border border-transparent rounded-md active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
                                             Tampilkan
                                         </button>
                                     </div>
                                 </form>
                             </div>
-                            <div class="px-4 py-3 mb-8 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                            <div class="px-2 py-2 mb-3 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                                <div class="w-full overflow-x-auto">
+                                    <table class="w-full whitespace-no-wrap table-auto">
+                                        <thead>
+                                            <tr class="text-xs font-semibold tracking-wide text-left text-gray-500 uppercase border-b dark:border-gray-700 bg-gray-50 dark:text-gray-400 dark:bg-gray-800">
+                                                <th class="px-4 py-2">Kecamatan</th>
+                                                <th class="px-4 py-2">Nilai</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="bg-white dark:bg-gray-800">
+                                            <?php foreach ($output['result'] as $row) : ?>
+                                                <tr class="text-gray-700 dark:text-gray-400">
+                                                    <td class="px-4 py-0.5 items-center text-sm"><?= $row['kecamatan']; ?></td>
+                                                    <td class="px-4 py-0.5 items-center text-sm"><?= $row['nilai']; ?></td>
+                                                </tr>
+                                            <?php endforeach; ?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- Bars chart -->
+                            <div class="min-w-0 p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800">
                                 <h4 class="mb-4 font-semibold text-gray-800 dark:text-gray-300">
-                                    Tabel
+                                    Bars
                                 </h4>
-                                <table>
-                                    <thead>
-                                        <th>Kecamatan</th>
-                                        <th>Nilai</th>
-                                    </thead>
-                                    <?php foreach ($output['result'] as $row) : ?>
-                                        <tr>
-                                            <td><?= $row['kecamatan']; ?></td>
-                                            <td><?= $row['nilai']; ?></td>
-                                        </tr>
-                                    <?php endforeach; ?>
-                                </table>
+                                <canvas id="bars"></canvas>
                             </div>
                         </div>
-                        <div class="min-w-0 p-4 bg-white rounded-lg shadow-md dark:bg-gray-800">
+                        <div class="min-w-0 p-4 bg-white rounded-lg col-span-2 dark:bg-gray-900">
                             <div id="maps"></div>
                         </div>
                     </div>
                 </div>
-            </main>
         </div>
+        </main>
+    </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="<?= base_url('assets/js/pagination.min.js'); ?>"></script>
     <script>
         // Variabel yang berisi agam.geojson
         var geo_maps = <?= json_encode($output['maps']) ?>;
-
         var nilaiMax = <?= $output['nilai_max'] ?>;
 
         function tampilkan() {
@@ -254,6 +269,14 @@
             };
         }
 
+        function onEachFeature(feature, layer) {
+            layer.bindPopup(feature.properties.WADMKK + " : " + feature.properties.nilai);
+            layer.on({
+                mouseover: highlightFeature,
+                mouseout: resetHighlight,
+            });
+        }
+
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
             attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
@@ -262,6 +285,66 @@
         var geojson = new L.geoJson(geo_maps, {
             style: style
         }).addTo(map);
+
+        // Legend of maps
+        var legend = L.control({
+            position: 'bottomright'
+        });
+
+        legend.onAdd = function(map) {
+
+            var div = L.DomUtil.create('div', 'info legend'),
+                grades = [0, (nilaiMax / 8) * 1, (nilaiMax / 8) * 2, (nilaiMax / 8) * 3, (nilaiMax / 8) * 4, (nilaiMax / 8) * 5, (nilaiMax / 8) * 6, (nilaiMax / 8) * 7],
+                labels = [];
+
+            // loop through our density intervals and generate a label with a colored square for each interval
+            for (var i = 0; i < grades.length; i++) {
+                div.innerHTML +=
+                    '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+                    grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+            }
+
+            return div;
+        };
+
+        legend.addTo(map);
+
+        // Bar Chart
+        var ctx = document.getElementById('bars').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: [
+                    <?php
+                    if (count($output['result']) > 0) {
+                        foreach ($output['result'] as $data) {
+                            echo "'" . $data['kecamatan'] . "',";
+                        }
+                    }
+                    ?>
+                ],
+                datasets: [{
+                    label: 'Nilai',
+                    backgroundColor: '#7e3af2',
+                    borderColor: '#93C3D2',
+                    data: [
+                        <?php
+                        if (count($output['result']) > 0) {
+                            foreach ($output['result'] as $data) {
+                                echo $data['nilai'] . ", ";
+                            }
+                        }
+                        ?>
+                    ]
+                }]
+            },
+            options: {
+                responsive: true,
+                legend: {
+                    display: false
+                },
+            },
+        });
     </script>
 </body>
 

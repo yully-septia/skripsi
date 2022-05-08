@@ -72,7 +72,7 @@ class Visualisasi extends BaseController
         // Mengambil setiap features (data spasial tiap kecamatan) pada file geojson
         $features = $file->features;
 
-        // Membrikan nilai pada setiap feature/kecamatan berdasarkan id_var dan id_tahun yang direquest
+        // Memberikan nilai pada setiap feature/kecamatan berdasarkan id_var dan id_tahun yang direquest
         foreach ($features as $feature) {
             //Mengambil properti kode kecamatan dari setiap feature
             $kode_kec = $feature->properties->kode;
@@ -95,7 +95,7 @@ class Visualisasi extends BaseController
             ->where('id_tahun', $id_tahun)
             ->first()['nilai'];
 
-        // Ambil data dari database berdasarkan nilai id_var dan id_tahun
+        // Ambil data dari database berdasarkan nilai id_var dan id_tahun untuk membuat tabel
         $result = $this->model->get_data_kec($id_var, $id_tahun);
 
         $output = ['maps' => $features, 'result' => $result, 'nilai_max' => $nilaiMax];
