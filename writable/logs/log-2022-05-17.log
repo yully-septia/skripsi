@@ -1,0 +1,73 @@
+CRITICAL - 2022-05-17 00:21:01 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 312)
+#1 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\Database\Query.php(312): implode(',', Array)
+#2 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\Database\Query.php(293): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `tb...', Array)
+#3 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\Database\Query.php(150): CodeIgniter\Database\Query->compileBinds()
+#4 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\Query->getQuery()
+#5 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#6 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#7 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#8 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#9 C:\xampp\htdocs\sig-agam\app\Controllers\CobaImport.php(98): CodeIgniter\Model->insert(Array)
+#10 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\CobaImport->upload()
+#11 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CobaImport))
+#12 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-05-17 01:00:38 --> Array to string conversion
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 312)
+#1 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\Database\Query.php(312): implode(',', Array)
+#2 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\Database\Query.php(293): CodeIgniter\Database\Query->matchNamedBinds('INSERT INTO `tb...', Array)
+#3 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\Database\Query.php(150): CodeIgniter\Database\Query->compileBinds()
+#4 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\Query->getQuery()
+#5 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#6 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#7 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#8 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#9 C:\xampp\htdocs\sig-agam\app\Controllers\CobaImport.php(98): CodeIgniter\Model->insert(Array)
+#10 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\CobaImport->upload()
+#11 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CobaImport))
+#12 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2022-05-17 01:51:00 --> Undefined property: App\Controllers\CobaImport::$data_kec
+#0 C:\xampp\htdocs\sig-agam\app\Controllers\CobaImport.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 119)
+#1 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\CobaImport->delete('799')
+#2 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CobaImport))
+#3 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-17 01:51:00 --> Undefined property: App\Controllers\CobaImport::$data_kec
+#0 C:\xampp\htdocs\sig-agam\app\Controllers\CobaImport.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 119)
+#1 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\CobaImport->delete('800')
+#2 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CobaImport))
+#3 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-17 08:06:20 --> Undefined property: App\Controllers\CobaImport::$data_kec
+#0 C:\xampp\htdocs\sig-agam\app\Controllers\CobaImport.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 120)
+#1 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\CobaImport->delete('802')
+#2 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CobaImport))
+#3 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-17 08:07:15 --> Undefined property: App\Controllers\CobaImport::$data_kec
+#0 C:\xampp\htdocs\sig-agam\app\Controllers\CobaImport.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 125)
+#1 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\CobaImport->export()
+#2 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CobaImport))
+#3 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-17 10:20:07 --> Undefined property: App\Controllers\CobaImport::$data_kec
+#0 C:\xampp\htdocs\sig-agam\app\Controllers\CobaImport.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 125)
+#1 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\CobaImport->export()
+#2 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CobaImport))
+#3 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-17 10:23:12 --> Object of class App\Controllers\CobaImport could not be converted to string
+#0 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\CobaImport->export()
+#1 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CobaImport))
+#2 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
