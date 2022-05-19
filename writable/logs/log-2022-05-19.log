@@ -1,0 +1,32 @@
+CRITICAL - 2022-05-19 01:31:07 --> Cannot declare class App\Controllers\Home, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-19 10:28:50 --> syntax error, unexpected token "return", expecting "," or ";"
+#0 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('api')
+#1 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(726): CodeIgniter\Router\Router->handle('api')
+#2 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 10:48:16 --> Object of class CodeIgniter\HTTP\Response could not be converted to string
+#0 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Api->index()
+#1 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#2 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-19 14:47:38 --> file_get_contents(http://simdasi.bps.go.id/api/v2/subjects?wilayah=1307000): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', 'C:\\xampp\\htdocs...', 17)
+#1 C:\xampp\htdocs\sig-agam\app\Controllers\Api.php(17): file_get_contents('http://simdasi....')
+#2 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Api->index()
+#3 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#4 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-05-19 14:48:27 --> file_get_contents(): Argument #1 ($filename) must be of type string, CodeIgniter\HTTP\Response given
+#0 C:\xampp\htdocs\sig-agam\app\Controllers\Api.php(17): file_get_contents(Object(CodeIgniter\HTTP\Response))
+#1 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(832): App\Controllers\Api->index()
+#2 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api))
+#3 C:\xampp\htdocs\sig-agam\vendor\codeigniter4\framework\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\sig-agam\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
